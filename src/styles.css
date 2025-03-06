@@ -98,7 +98,7 @@ hr {
 
 .resources-container {
     text-align: center;
-    max-width: 2500px;
+    max-width: 100%;
     padding: 20px;
     justify-items: center;
 }
@@ -118,7 +118,6 @@ hr {
     margin-top: 20px;
     position: relative;
     justify-items: center;
-
 }
 
 .resource-item {
@@ -127,7 +126,7 @@ hr {
     color: white;
     border-radius: 20px;
     padding: 35px;
-    width: 350px;
+    width: 290px;
     height: 175px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -144,6 +143,7 @@ hr {
 .resource-item img {
     width: 20%;
     height: auto;
+    margin: 0px;
 }
 
 .resource-item .h3 {
