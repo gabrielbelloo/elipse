@@ -2,9 +2,13 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f3f3f3;
+    background-color: #ffffff;
     color: #010101;
     margin: 0;
     display: flex;
@@ -198,106 +202,27 @@ nav ul li a {
     font-size: 18px;
 }
 
+
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px;
-    text-align: left;
-    gap: 50px;
-}
-
-.content h3 {
-    color: white;
-    font-weight: 300;
-    
-}
-
-.content h1 {
-    font-size: 36px;
-    font-weight: 400;
-    text-decoration: none;
-}
-
-.highlight {
-    color: white;
-    font-weight: bold;
-}
-
-.btn {
-    background-color: #FF1493;
-    padding: 15px 25px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 8px;
-    display: inline-block;
-    margin-top: 20px;
-}
-
-.image img {
-    width: 400px;
-}
-
-
-
-.resources-container {
+    background-color: #421983;
+    top: 0;
+    width: 100%;
+    height: 100vh;
     text-align: center;
-    max-width: 100%;
-    padding: 20px;
-    justify-items: center;
-}
-
-.resources-container .highlight {
-    color: #FF1493;
-}
-
-.resources-container h2 {
-    font-size: 28px;
-    color: white;
-    margin-bottom: 120px;
-}
-
-.resources-list {
     display: flex;
-    margin-top: 20px;
-    position: relative;
-    justify-items: center;
+    flex-direction: column;
 }
 
-.resource-item {
-    background: rgb(113,113,113);
-    background: linear-gradient(4deg, rgba(113,113,113,0.8071603641456583) 15%, rgba(71,71,71,0.8939950980392157) 47%, rgba(46,46,46,0.8995973389355743) 89%);
+.hero h1 {
+    margin-top: 150px;
     color: white;
-    border-radius: 20px;
-    padding: 35px;
-    width: 290px;
-    height: 175px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
-    margin-left: 20px;
-    transition: 2s;
+    font-size: 2.6em;
+    margin-bottom: 20px;
 }
 
-.resource-item:hover {
-    background: rgb(46,46,46);
-    background: linear-gradient(4deg, rgba(46,46,46,0.8995973389355743) 15%, rgba(71,71,71,0.8939950980392157) 47%, rgba(113,113,113,0.8071603641456583) 89%);
+.hero h2 {
+    color: white;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    font-weight: normal;
 }
-
-.resource-item img {
-    width: 20%;
-    height: auto;
-    margin: 0px;
-}
-
-.resource-item .h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.resource-item .p {
-    font-size: 14px;
-    line-height: 1.4;
-}
-
