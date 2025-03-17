@@ -17,3 +17,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+function openTab(evt, tabName) {
+    let i, tabContent, tabLinks;
+
+    tabContent = document.querySelectorAll(".tab-content");
+    tabContent.forEach(content => content.classList.remove("active"));
+
+    tabLinks = document.querySelectorAll(".tab-link");
+    tabLinks.forEach(link => link.classList.remove("active"));
+
+    document.getElementById(tabName).classList.add("active");
+    evt.currentTarget.classList.add("active");
+}

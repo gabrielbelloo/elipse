@@ -32,6 +32,7 @@ header {
     text-align: left;
     align-items: center;
     transition: bottom 0.5s ease;
+    z-index: 100;
 }
 
 .header-section {
@@ -202,13 +203,13 @@ nav ul li a {
     font-size: 18px;
 }
 
-
 .hero {
     background-color: #421983;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     text-align: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
@@ -222,7 +223,93 @@ nav ul li a {
 
 .hero h2 {
     color: white;
-    font-size: 1.6em;
+    font-size: 1.2em;
     margin-bottom: 20px;
     font-weight: normal;
+}
+
+.btn {
+    background-color: #ff622d;
+    padding: 15px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.btn:hover {
+    background-color: #e94f13;
+}
+
+.features {
+    background-color: #ffffff;
+    width: 80%;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.tabs-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.tab-link {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+    border-bottom: 3px solid #ccc;
+    margin: 10px;
+}
+
+.tab-link:hover {
+    color: #421983;
+}
+
+.tab-link.active {
+    color: #421983;
+    border-bottom: 3px solid #421983;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+
+
+
+.abc {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
 }
