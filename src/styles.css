@@ -31,6 +31,7 @@ header {
     flex-wrap: wrap;
     text-align: left;
     align-items: center;
+    justify-content: space-between;
     transition: bottom 0.5s ease;
     z-index: 100;
 }
@@ -67,14 +68,22 @@ header p {
     margin-right: 40px;
 }
 
-header button {
+header .btn {
     background-color: #ffffff;
     color: #111111;
     border: none;
+    margin: 0;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+header .btn:hover {
+    background-color: #9a9a9a;
 }
 
 .header-section ul {
