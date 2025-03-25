@@ -366,6 +366,33 @@ nav ul li a {
     border-radius: 10px;
 }
 
+.carousel {
+
+    display: flex;
+    overflow-x: auto; 
+    white-space: nowrap;
+    gap: 20px;
+    background: black; /* Para combinar com a imagem */
+    scrollbar-width: none; /* Esconde a barra de rolagem no Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Esconde a barra de rolagem no Chrome e Edge */
+}
+
+.carousel img {
+    height: 50px;
+    margin: 20px
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
 
 
 
