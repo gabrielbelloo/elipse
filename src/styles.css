@@ -372,17 +372,13 @@ nav ul li a {
     overflow-x: auto; 
     white-space: nowrap;
     gap: 20px;
-    background: black; /* Para combinar com a imagem */
-    scrollbar-width: none; /* Esconde a barra de rolagem no Firefox */
-}
-
-.scroll-container::-webkit-scrollbar {
-    display: none; /* Esconde a barra de rolagem no Chrome e Edge */
+    background: pink;
 }
 
 .carousel img {
     height: 50px;
-    margin: 20px
+    margin: 20px;
+    animation-name: scroll;
 }
 
 @keyframes scroll {
