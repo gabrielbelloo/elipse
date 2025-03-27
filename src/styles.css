@@ -38,7 +38,6 @@ header {
 
 .header-section {
     flex: 1 1 200px;
-
     font-size: 1.1em;
   }
 
@@ -224,7 +223,7 @@ nav ul li a {
 
 .hero {
     background: rgb(20,7,45);
-    background: linear-gradient(151deg, rgba(20,7,45,1) 5%, rgba(34,16,74,1) 16%, rgba(61,33,129,1) 72%);
+    background: linear-gradient(151deg, rgba(20,7,45,1) 16%, rgba(16,21,74,1) 37%, rgba(27,51,180,1) 88%);
     top: 0;
     width: 100%;
     height: 120vh;
@@ -249,7 +248,7 @@ nav ul li a {
 }
 
 .btn {
-    background-color: #ff622d;
+    background-color: #535FE5;
     padding: 15px 25px;
     color: #ffffff;
     text-decoration: none;
@@ -259,10 +258,13 @@ nav ul li a {
     display: inline-block;
     margin-top: 20px;
     margin-bottom: 0px;
+    transition: all 1s ease-out;
 }
 
 .btn:hover {
-    background-color: #e94f13;
+    background: rgb(46,47,130);
+    background: linear-gradient(0deg, rgba(46,47,130,1) 0%, rgba(83,95,229,1) 100%);
+    transition: all 1s ease-out;
 }
 
 .features{
@@ -367,26 +369,31 @@ nav ul li a {
 }
 
 .carousel {
-
-    display: flex;
-    overflow-x: auto; 
-    white-space: nowrap;
-    gap: 20px;
+    width: 100%;
+    margin-top: 5em;
+    padding: 2em;
+    overflow: hidden; 
     background: pink;
+}
+
+.carousel-container {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+    animation: scroll 15s linear infinite;
+    will-change: transform;
 }
 
 .carousel img {
     height: 50px;
-    margin: 20px;
-    animation-name: scroll;
 }
 
 @keyframes scroll {
     from {
-        transform: translateX(0);
+        transform: translate3d(0, 0, 0);
     }
     to {
-        transform: translateX(-50%);
+        transform: translate3d(-50%, 0, 0);
     }
 }
 
