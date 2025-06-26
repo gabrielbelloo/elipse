@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const headerLinks = document.querySelectorAll('header a');
+    const headerLinks = document.querySelectorAll('.header-subsection a');
 
     headerLinks.forEach(link => {
         link.addEventListener('mouseenter', () => {

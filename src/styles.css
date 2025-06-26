@@ -19,13 +19,11 @@ body {
 /* ___HEADER & FOOTER___ */
 header {
   color: #dfdfdf;
-  padding: 1vh 0;
+  padding: 1vh 8vh;
   padding-top: 4vh;
-  padding-left: 2vh;
-  padding-right: 2vh;
   width: 100%;
   top: 0;
-  position: fixed;
+  position:absolute;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -48,21 +46,18 @@ header {
   color: #9d9d9d;
 }
 
+.header-subsection a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
 header a {
   color: #f3f3f3;
+  font-size: 2vh;
   font-weight: 600;
   text-decoration: none;
   margin: 0 3vh;
   transition: 300ms;
   border-bottom: 2px solid transparent;
-}
-
-header a:hover {
-  border-bottom: 2px solid #ffffff;
-}
-
-header .btn:hover {
-  background-color: #9a9a9a;
 }
 
 footer {
@@ -122,10 +117,9 @@ footer p {
   border-top: 2px solid #737373;
   width: 100%;
 }
-
 .social-media {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 2fr);
 }
 
 .social-media a {
@@ -136,8 +130,6 @@ footer p {
   width: 4vh;
   height: 3.3vh;
   margin: 0;
-  margin-left: 4vh;
-  margin-right: 4vh;
   color: white;
 }
 
