@@ -310,10 +310,9 @@ h2 {
    6. BUTTONS
 ============================= */
 .btn {
-  background: linear-gradient(to right, #b97cff, #535fe5);
+    background: #535fe5;
   padding: 1.2vh 2.4vh;
   color: #ffffff;
-  text-decoration: none;
   font-weight: 700;
   font-size: 1.8vh;
   border-radius: 0.8vh;
@@ -330,8 +329,14 @@ h2 {
 }
 
 .btn:hover {
-  background: linear-gradient(to left, #b97cff, #535fe5);
-  transition: all 1s ease-in;
+  background: #b97cff;
+    transition: all 0.3s ease-in;
+}
+
+.white-outline:hover {
+  background: transparent;
+  border: 2px solid #999;
+  transition: all 0.2s ease-in;
 }
 
 .container .btn {
