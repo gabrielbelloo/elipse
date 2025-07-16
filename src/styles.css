@@ -74,7 +74,7 @@ body {
   background: rgba(255, 255, 255, 0.05);
   padding: 2vh;
   border-radius: 1.2vh;
-  width: calc(50% - 10px);
+  width: calc(100% - 10px);
   box-sizing: border-box;
 }
 
@@ -166,7 +166,7 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-
+  width: 45%;
 }
 
 .left {
@@ -338,9 +338,6 @@ h4 {
   border-radius: 3vh;
 }
 
-
-
-
 .carousel {
   width: 100%;
   margin-top: 5em;
@@ -372,13 +369,40 @@ span {
 }
 
 .label {
+  display: inline-block;
   padding: 0.4vh 3vh;
-  border: 1px solid #ffffff;
+  margin: 1.8vh 0;
+  border: 1px solid #535fe5;
   color: #ffffff;
   border-radius: 999px;
   font-size: 1.6vh;
   font-weight: 500;
   width: fit-content;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  background-color: #25d366;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.whatsapp-float:hover {
+  background-color: #22c35e;
+}
+.whatsapp-float svg {
+  width: 36px;
+  height: 36px;
+  fill: #fff;
 }
 
 @keyframes scroll {
@@ -490,7 +514,7 @@ span {
     margin: 4vh 0;
   }
 
-  .topics{
+  .topics {
     margin-top: 0;
   }
 
