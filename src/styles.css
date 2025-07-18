@@ -21,8 +21,8 @@ body {
    2. LAYOUT STRUCTURE
 ============================= */
 .logo {
-  width: 4vh;
-  height: 3.3vh;
+  width: auto;
+  height: 6vh;
   margin: 0;
   color: white;
 }
@@ -109,8 +109,7 @@ body {
 ============================= */
 header {
   color: #dfdfdf;
-  padding: 1vh 8vh;
-  padding-top: 4vh;
+  padding: 2vh 8vh;
   width: 100%;
   top: 0;
   position: absolute;
@@ -382,26 +381,27 @@ span {
 
 .whatsapp-float {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 9999;
+  bottom: 3vh;
+  right: 3vh;
   background-color: #25d366;
-  width: 64px;
-  height: 64px;
+  width: 6.6vh;
+  height: 6.6vh;
   border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.4vh 1.2vh rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: background 0.2s;
+  z-index: 9999;
 }
 .whatsapp-float:hover {
   background-color: #22c35e;
+  transform: scale(1.05);
 }
 .whatsapp-float svg {
-  width: 36px;
-  height: 36px;
+  width: 3.6vh;
+  height: 3.6vh;
   fill: #fff;
 }
 
@@ -416,6 +416,7 @@ span {
 
 #faq {
   align-items: center;
+  width: 50%;
 }
 
 #faq details {
@@ -460,11 +461,18 @@ span {
   }
 
   header {
-    display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10vh;
+    flex-wrap: nowrap;
+    height: auto;
     padding: 2vh 2vw;
+  }
+
+  .logo {
+    width: auto;
+    height: 6vh;
+    margin: 0;
+    color: white;
   }
 
   .hero {
@@ -554,15 +562,21 @@ span {
 
 @media (max-width: 600px) {
   header {
-    padding: 1em 2vw;
-    flex-direction: column;
+    padding: 1.4em 4vw;
     align-items: flex-start;
     gap: 1em;
   }
 
   .logo {
-    width: 36px;
-    margin-bottom: 1em;
+    width: auto;
+    height: 4vh;
+    margin: 0;
+    color: white;
+  }
+
+  .centered {
+    width: 100%;
+    text-align: center;
   }
 
   .headline {
@@ -597,6 +611,23 @@ span {
   .carousel img {
     height: 36px;
     max-width: 60px;
+  }
+
+  #faq {
+    width: 100%;
+  }
+
+  .whatsapp-float {
+    width: 4.6vh;
+    height: 4.6vh;
+    bottom: 2vh;
+    right: 2vh;
+  }
+
+  .whatsapp-float svg {
+    width: 2.6vh;
+    height: 2.6vh;
+    fill: #fff;
   }
 }
 
