@@ -35,8 +35,7 @@ body {
     rgba(16, 21, 74, 1) 37%,
     rgba(27, 51, 180, 1) 88%
   );
-  width: 100%;
-  height: auto;
+  width: auto;
   padding: 10vh 0;
   text-align: center;
   align-items: center;
@@ -50,7 +49,6 @@ body {
   flex-wrap: wrap;
   gap: 2vh;
   justify-content: center;
-  max-width: 100vh;
   margin: 0 auto;
 }
 
@@ -186,6 +184,10 @@ footer {
   height: 100%;
   border-radius: 5px !important;
 }
+
+.wide {
+  width: 200%;
+}
 /* =============================
    4. TYPOGRAPHY
 ============================= */
@@ -220,7 +222,7 @@ header a {
 p {
   margin-top: 0.4vh;
   color: #b8b8b8;
-  font-size: 1.2vh;
+  font-size: 0.8vw;
   line-height: 1;
   margin-bottom: 2vh;
 }
@@ -451,11 +453,14 @@ span {
   text-align: left;
 }
 
+#precos {
+  padding: 0 18vw;
+}
 /* =============================
    7. MEDIA QUERIES
 ============================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .header-subsection {
     display: none;
   }
@@ -494,7 +499,7 @@ span {
   }
 
   h1 {
-    font-size: 10vw;
+    font-size: 8vw;
     font-weight: 1000;
     margin-bottom: 2vh;
   }
@@ -556,6 +561,85 @@ span {
     flex-wrap: wrap;
     justify-content: flex-start;
     font-size: 1em;
+    gap: 0.5em;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo {
+    width: auto;
+    height: 5vh;
+    margin: 0;
+    color: white;
+  }
+
+  .hero {
+    padding: 8vh 5vw;
+  }
+
+  .headline {
+    padding: 0 5vw;
+    margin-top: 4vh;
+    font-size: 1.2em;
+  }
+
+  h1 {
+    font-size: 6vw;
+    font-weight: 1000;
+    margin-bottom: 2vh;
+  }
+
+  h2 {
+    font-size: 3.5vw;
+    font-weight: normal;
+  }
+
+  p {
+    font-size: 1.4vh;
+  }
+
+  .btn {
+    padding: 1.2vh 3vw;
+    font-size: 1.4em !important;
+    border-radius: 1.2vh;
+  }
+
+  .carousel img {
+    height: auto;
+    max-width: 80px;
+  }
+
+  .box {
+    width: calc(150% - 10px);
+    padding: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .label {
+    font-size: 2.4vw;
+    padding: 0.6em 2vw;
+  }
+
+  #precos {
+    padding: 0 10vw;
+  }
+
+  #faq {
+    width: 80%;
+  }
+
+  footer {
+    transform: scale(1.1);
+    max-width: 93.5vw;
+    gap: 0;
+  }
+
+  .footer-section {
+    padding: 1vh 1.5vw;
+  }
+
+  .social-media {
+    grid-template-columns: repeat(3, 1fr);
     gap: 0.5em;
   }
 }
@@ -631,7 +715,7 @@ span {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 300px) {
   .logo {
     width: 28px;
   }
