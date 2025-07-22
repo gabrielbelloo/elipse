@@ -22,7 +22,7 @@ body {
 ============================= */
 .logo {
   width: auto;
-  height: 6vh;
+  height: 5.5vh;
   margin: 0;
   color: white;
 }
@@ -175,7 +175,7 @@ footer {
 }
 
 .bordered {
-  border: 1px solid #999;
+  border: 1px solid #14072d;
   border-radius: 3vh;
 }
 
@@ -576,7 +576,7 @@ span {
   .hero {
     padding: 8vh 5vw;
   }
-
+  
   .headline {
     padding: 0 5vw;
     margin-top: 4vh;
@@ -627,21 +627,6 @@ span {
   #faq {
     width: 80%;
   }
-
-  footer {
-    transform: scale(1.1);
-    max-width: 93.5vw;
-    gap: 0;
-  }
-
-  .footer-section {
-    padding: 1vh 1.5vw;
-  }
-
-  .social-media {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5em;
-  }
 }
 
 @media (max-width: 600px) {
@@ -649,6 +634,10 @@ span {
     padding: 1.4em 4vw;
     align-items: flex-start;
     gap: 1em;
+  }
+
+  h2 {
+    font-size:  2vh;
   }
 
   .logo {
@@ -667,6 +656,12 @@ span {
     padding: 0 2vw;
     margin-top: 3vh;
     font-size: 1em;
+  }
+
+  .btn {
+    padding: 1.2vh 3vw;
+    font-size: 1em !important;
+    border-radius: 1.2vh;
   }
 
   .container,
@@ -712,6 +707,14 @@ span {
     width: 2.6vh;
     height: 2.6vh;
     fill: #fff;
+  }
+
+  p {
+    font-size: 1.8vh;
+  }
+
+  .label {
+    font-size: 3vw;
   }
 }
 
