@@ -481,7 +481,7 @@ span {
   }
 
   .hero {
-    padding: 10vh 10vw;
+    padding: 10vh 0;
   }
 
   .label {
@@ -575,10 +575,9 @@ span {
     padding: 0;
   }
 
-  .box,
-  #precos .box {
-    width: 100%;
-    min-width: 160px;
+  .box {
+    width: calc(70% - 10px);
+    padding: 1.5em;
     margin-bottom: 1em;
   }
 
@@ -588,26 +587,31 @@ span {
     font-size: 1em;
     gap: 0.5em;
   }
+  
 }
 
 @media (max-width: 1050px) and (max-height: 600px) {
   .headline {
-    padding: 0 5vw;
+    padding: 0 8vw !important;
+  }
+
+  #features-h1 {
+    padding: 0 12vw !important;
   }
 
   h1 {
-    font-size: 8vh;
+    font-size: 6vh;
     font-weight: 1000;
     margin-bottom: 2vh;
   }
 
   h2 {
-    font-size: 4.5vh;
+    font-size: 3.4vh;
     font-weight: normal;
   }
 
   h3 {
-    font-size: 4vw;
+    font-size: 2.8vw;
   }
 
   p {
@@ -622,24 +626,59 @@ span {
     font-size: 4vh;
   }
 
+  .container {
+    flex-direction: row;
+  }
+
+  #precos li {
+    font-size: 3vh;
+  }
+
+  #precos .button-container a {
+    font-size: 3.8vh;
+    padding: 1.2vh 2.4vh;
+  }
+
+  .button-container {
+    display: block;
+    gap: 4vh;
+    width: 100%;
+  }
+
   .button-container a {
-    font-size: 5.5vh;
+    font-size: 4.5vh;
     font-weight: 600;
     border-radius: 1.4vh;
     padding: 1.4vh 3vh;
+  }
+
+  .features .topics {
+    margin: 0 24vw;
+  }
+
+  .box {
+    width: calc(70% - 10px);
   }
 
   .label {
     font-size: 3vh;
   }
 
-  .preco{
-    margin-top: 6vh;
+  .preco {
+    margin-top: 5vh;
+    width: 100%;
   }
 
-  .preco .centered{
-    margin: 1.4vh 0;
-    transform: scale(1.8);
+  #precos span {
+    font-size: 6.5vh;
+  }
+
+  #faq {
+    width: 80%;
+  }
+
+  .faq-item summary {
+    font-size: 2.8vh;
   }
 }
 
